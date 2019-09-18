@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/open_photo" android:title="@string/open_photo"/>
+    <item android:id="@+id/open_camera" android:title="@string/open_camera"/>
+
+</menu>

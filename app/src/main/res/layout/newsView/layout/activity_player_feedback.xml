@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.g40_70.coursedesign.player_activity.player_feedback">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBackground"
+        android:theme="@style/AppTheme"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/feedback_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="@string/feedback_hint" />
+
+        <TextView
+            android:id="@+id/max_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count_num"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignBottom="@+id/feedback_content"
+             />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/feedback_submit"
+        android:text="@string/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ivory"/>
+
+</LinearLayout>

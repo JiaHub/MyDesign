@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--首页标题-->
+    <string name="app_name">提升</string>
+    <string name="tb_title_home">首页</string>
+    <string name="tb_title_team">球队</string>
+    <string name="tb_title_player">球员</string>
+    <string name="tb_title_rest">休息</string>
+    <string name="train_place">训练场</string>
+    <string name="news">新闻</string>
+    <string name="top_title">提升</string>
+
+
+    <!--休息-->
+    <string name="first">队伍</string>
+    <string name="train">训练</string>
+    <string name="basic">基础</string>
+    <string name="football">足坛</string>
+    <string name="content">内容</string>
+    <string name="content_title">标题</string>
+
+
+    <!--常用-->
+    <string name="copy">复制</string>
+    <string name="paste">粘贴</string>
+    <string name="picture">图片</string>
+    <string name="check_day">签到成功！</string>
+    <string name="exit_login">退出</string>
+
+
+    <!--我的-->
+    <string name="check">签到</string>
+    <string name="refresh">刷新</string>
+    <string name="sex">性别</string>
+    <string name="sex_man">男</string>
+    <string name="sex_woman">女</string>
+    <string name="age">年龄</string>
+    <string name="height">身高(cm)</string>
+    <string name="weight">体重(kg)</string>
+    <string name="pre_age">18</string>
+    <string name="pre_check">0</string>
+    <string name="pre_height">180cm</string>
+    <string name="pre_weight">70kg</string>
+    <string name="pre_polo_number">28</string>
+    <string name="pre_polo_name">后场冲浪</string>
+    <string name="check_count">签到记录</string>
+
+
+
+
+</resources>

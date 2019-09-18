@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="1dp">
+
+    <com.example.g40_70.coursedesign.test.Topbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        toolbar:rightText="菜单"
+        toolbar:rightTextColor="@color/colorAccent"
+        toolbar:title="标题"
+        toolbar:titleTextColor="@color/colorPrimaryBackground"
+        toolbar:titleTextSize="10dp"
+       >
+
+    </com.example.g40_70.coursedesign.test.Topbar>
+
+
+
+</RelativeLayout>

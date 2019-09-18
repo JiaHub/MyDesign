@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.2"
+    defaultConfig {
+        applicationId "com.example.g40_70.coursedesign"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        repositories {
+            maven {
+                url "https://maven.google.com"
+            }
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layout/newsView',
+                    'src/main/res/layout/testView',
+                    'src/main/res/layout/tbView',
+                    'src/main/res/layout/extraView',
+                    'src/main/res/drawable/new_picture',
+                    'src/main/res/drawable/icon',
+                    'src/main/res/drawable/picture',
+                    'src/main/res/drawable/onclick_style',
+                    'src/main/res/drawable/wheel',
+                    'src/main/res/tab_layout',
+                    'src/main/res'
+            ]
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //用第三方的包与下面的原装的包二选一
+    //    compile 'com.qmuiteam:qmui:1.0.6'
+    compile 'com.android.support:appcompat-v7:28.+'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:28.+'
+    testCompile 'junit:junit:4.12'
+}

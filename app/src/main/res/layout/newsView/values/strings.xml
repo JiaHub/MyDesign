@@ -1,0 +1,77 @@
+<resources>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <!--设置-->
+    <string name="player_info">我的信息</string>
+    <string name="feedback">意见反馈</string>
+    <string name="cache">缓存清理</string>
+    <string name="config">设置</string>
+    <string name="my">我的</string>
+    <string name="count_num">字数</string>
+    <string name="about">关于</string>
+    <string name="submit">提交</string>
+    <string name="con_db">隐藏数据库</string>
+    <string name="info_exit">你点击了退出！</string>
+    <string name="delete_cache">成功清理缓存！</string>
+    <string name="feedback_hint">球星您有什么想说的：</string>
+
+
+    <!--编辑-->
+    <string name="save">保存</string>
+    <string name="editor">编辑</string>
+    <string name="polo_name">球衣名</string>
+    <string name="polo_name1">球衣名：</string>
+    <string name="polo_number">球服号码</string>
+    <string name="polo_number1">球服号码：</string>
+    <string name="play_site">场上位置</string>
+    <string name="play_site1">场上位置：</string>
+    <string name="age1">年龄：</string>
+    <string name="foot">惯用脚</string>
+    <string name="left_foot">左脚</string>
+    <string name="right_foot">右脚</string>
+
+    <string name="open_photo">打开相册</string>
+    <string name="open_camera">打开相机</string>
+    <string name="open_way">打开方式</string>
+
+    <!--首页-->
+    <string name="mind">精神</string>
+    <string name="body">身体</string>
+    <string name="skill">技术</string>
+    <string name="home_tactics">战术</string>
+    <string name="six">6</string>
+    <string name="_8">8</string>
+    <string name="_10">10</string>
+    <string name="home_info">从来就是如此，不是吗？</string>
+    <string name="physical">Physical</string>
+    <string name="tactics">Tactics</string>
+    <string name="technical">Technical</string>
+    <string name="home_info1">欣赏风景</string>
+    <string name="home_info2">热门推荐</string>
+    <string name="hot_title1">球性全面培养</string>
+    <string name="hot_title2">赛前快速热身</string>
+    <string name="hot_title3">赛后缓解酸痛</string>
+
+
+    <!--学习-->
+    <string name="excerpts">摘录</string>
+    <string name="delete_excerpts">清空</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="editor_info">请输入文本</string>
+    <string name="db">数据库</string>
+    <string name="into_db">输入口令</string>
+
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBackground"
+        android:theme="@style/AppTheme"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/config_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--关于-->
+    <RelativeLayout
+        android:id="@+id/about_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/config_background"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="@color/colorText"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/in"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorGray"/>
+
+    <!--账户管理-->
+    <RelativeLayout
+        android:id="@+id/info_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/config_background"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_info"
+            android:textColor="@color/colorText"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/in"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorGray"/>
+
+    <!--意见反馈-->
+    <RelativeLayout
+        android:id="@+id/feedback_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/config_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback"
+            android:textColor="@color/colorText"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/in"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorGray"/>
+
+    <!--缓存清理-->
+    <RelativeLayout
+        android:id="@+id/cache_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/config_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/con_db"
+            android:textColor="@color/colorText"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/in"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGray"/>
+
+    <Button
+        android:id="@+id/exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/exit_login"
+        android:textSize="20sp"
+        android:background="@color/wheat"
+        />
+
+</LinearLayout>

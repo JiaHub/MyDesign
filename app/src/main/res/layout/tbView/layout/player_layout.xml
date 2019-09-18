@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBackground"
+        android:paddingTop="10dp"
+        android:theme="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/player_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/site">
+
+        <TextView
+            android:id="@+id/polo_number"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/polo_name"
+            android:layout_alignStart="@+id/polo_name"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/pre_polo_number"
+            android:textColor="@color/wheat"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/polo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/day_check"
+            android:layout_alignStart="@+id/day_check"
+            android:layout_marginBottom="13dp"
+            android:text="@string/pre_polo_name"
+            android:textColor="@color/colorGray"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/day_check"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="13dp"
+            android:background="@drawable/yuan_jiao"
+            android:text="@string/refresh" />
+
+    </RelativeLayout>
+
+    <!--滚动-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--年龄-->
+            <RelativeLayout
+                android:id="@+id/player_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/player_layout_onclick"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@mipmap/player_age"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/age"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/player_age_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@mipmap/in"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/pre_age"
+                    android:textColor="@color/ivory"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!--性别-->
+            <RelativeLayout
+                android:id="@+id/player_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/player_layout_onclick"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@mipmap/player_sex"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/sex"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/player_sex_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@mipmap/in"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/sex_man"
+                    android:textColor="@color/ivory"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!--身高-->
+            <RelativeLayout
+                android:id="@+id/player_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/player_layout_onclick"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@mipmap/player_height"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/height"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/player_height_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@mipmap/in"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/pre_height"
+                    android:textColor="@color/ivory"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!--体重-->
+            <RelativeLayout
+                android:id="@+id/player_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/player_layout_onclick"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@mipmap/player_weight"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/weight"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/player_weight_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@mipmap/in"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/pre_weight"
+                    android:textColor="@color/ivory"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!--签到记录-->
+            <RelativeLayout
+                android:id="@+id/player_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/player_layout_onclick"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:drawableStart="@mipmap/player_check"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/check_count"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/player_check_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableEnd="@mipmap/in"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/pre_check"
+                    android:textColor="@color/ivory"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

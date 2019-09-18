@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryBackground"
+        android:paddingBottom="5dp"
+        android:paddingTop="25dp">
+
+        <ImageButton
+            android:id="@+id/player_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/back_onclick"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/editor"
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/yuan_jiao"
+            android:gravity="center"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGray" />
+
+    <!--ScrollView只能有一个直接子控件-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <!--这个线性布局单纯的用来嵌入滑动-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--外面背景-->
+            <RelativeLayout
+                android:id="@+id/play_info_picture"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ivory"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <com.example.g40_70.coursedesign.extra_activity.CustomRoundView
+                    android:id="@+id/round_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/site"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageButton
+                    android:id="@+id/camera"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/photo"
+                    android:background="@color/ivory"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <!--球衣名-->
+            <LinearLayout
+                android:id="@+id/play_info_name"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/polo_name" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuan_jiao"
+                    android:gravity="center"
+                    android:hint="@string/polo_name1" />
+
+            </LinearLayout>
+
+            <!--球服号码-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/play_info_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/polo_number" />
+
+                <TextView
+                    android:id="@+id/p_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuan_jiao"
+                    android:gravity="center"
+                    android:hint="@string/polo_number1" />
+
+            </LinearLayout>
+
+            <!--性别-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/sex" />
+
+                <!--性别选项-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/sex_man"
+                        android:layout_width="160dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toStartOf="@+id/sex_woman"
+                        android:background="@drawable/checked_left"
+                        android:text="@string/sex_man" />
+
+                    <Button
+                        android:id="@+id/sex_woman"
+                        android:layout_width="160dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/check_right"
+                        android:text="@string/sex_woman"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <!--场上位置-->
+            <LinearLayout
+                android:id="@+id/play_info_site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/play_site" />
+
+                <TextView
+                    android:id="@+id/p_site"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuan_jiao"
+                    android:gravity="center"
+                    android:hint="@string/play_site1" />
+
+            </LinearLayout>
+
+            <!--年龄-->
+            <LinearLayout
+                android:id="@+id/play_info_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/p_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuan_jiao"
+                    android:gravity="center"
+                    android:hint="@string/age1" />
+
+            </LinearLayout>
+
+            <!--身高-->
+            <LinearLayout
+                android:id="@+id/play_info_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/height" />
+
+                <TextView
+                    android:id="@+id/p_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuan_jiao"
+                    android:gravity="center"
+                    android:hint="@string/pre_height" />
+
+            </LinearLayout>
+
+            <!--体重-->
+            <LinearLayout
+                android:id="@+id/play_info_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/weight" />
+
+                <TextView
+                    android:id="@+id/p_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuan_jiao"
+                    android:gravity="center"
+                    android:hint="@string/pre_weight" />
+
+            </LinearLayout>
+
+            <!--惯用脚-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/foot" />
+
+                <!--惯用脚选项-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/left_foot"
+                        android:layout_width="160dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toStartOf="@+id/right_foot"
+                        android:background="@drawable/check_left"
+                        android:text="@string/left_foot" />
+
+                    <Button
+                        android:id="@+id/right_foot"
+                        android:layout_width="160dp"
+                        android:layout_height="25dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/checked_right"
+                        android:text="@string/right_foot"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/info_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/save"
+                android:background="@color/wheat"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

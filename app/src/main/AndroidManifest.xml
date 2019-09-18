@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.g40_70.coursedesign">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/soccer"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Base">
+        <activity android:name=".extra_activity.the_first">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".extra_activity.myhome">
+
+        </activity>
+
+        <!-- 主页 -->
+        <activity android:name=".tab_activity.tb_player" />
+        <activity
+            android:name=".tab_activity.tb_team"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+        <activity android:name=".tab_activity.tb_news" />
+        <activity android:name=".tab_activity.tb_home">
+
+        </activity>
+
+        <!-- 休息页 -->
+        <activity android:name=".news_activity.news_first" />
+        <activity android:name=".news_activity.news_train" />
+        <activity android:name=".news_activity.news_football" />
+        <activity android:name=".news_activity.news_basic" />
+        <activity android:name=".news_activity.news_content" />
+
+        <!-- 我的设置 -->
+        <activity android:name=".player_activity.player_config" />
+        <activity android:name=".player_activity.player_editor" />
+
+        <!-- 测试 -->
+        <activity android:name=".test.Main3Activity" />
+        <activity android:name=".test.testTabHost" />
+        <activity android:name=".test.time_test" />
+        <activity android:name=".extra_activity.Db_lite" >
+
+        </activity>
+        <activity android:name=".test.test_wheel" />
+        <activity android:name=".player_activity.player_feedback" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
